@@ -2,7 +2,7 @@
 
 namespace App\DAO;
 
-class FuncionarioDAO
+class LoginDAO
 {
 
 }

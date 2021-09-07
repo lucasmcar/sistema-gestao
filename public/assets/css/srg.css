@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+html{
+    --background: blue;
+    --text: white
+}
+
 a{
     text-decoration: none;
 }
@@ -62,7 +67,7 @@ li{
 }
 
 .card-group{
-    margin-top: 10px;
+    margin-top: 5dpx;
     display: flex;
     align-items: center;
     padding: 6px;
@@ -100,8 +105,20 @@ li{
 }
 
 .card > .card-body{
-
+    padding: 6px;
 }
+
+.card-body > .card-link{
+    display: flex;
+    justify-content: end;
+    border-radius: 2px;
+    padding: 6px;
+    background-color: #5b7d9c;
+    color: white;
+    width: auto;
+}
+
+
 
 .header{
     display: flex;
@@ -120,6 +137,7 @@ li{
     padding: 16px;
     color: white;
     justify-content: space-between;
+    transition: .5s all ease;
 }
 
 .menu{
@@ -150,6 +168,7 @@ li{
     background-color: #668AAB;
     display: flex;
     flex-direction: column;
+    transition: .5s all ease;
 }
 
 .side-menu li{
@@ -157,7 +176,7 @@ li{
     align-items: center;
     border-bottom: 2px solid #5b7d9c;
     color: #d1cece;
-    padding: 10px;
+    padding: 6px;
     font-weight: 300;
 }
 
@@ -217,4 +236,38 @@ li{
 
 .text-e{ text-align: end; }
 
+
+
+
+
+
+
+/*Classes para modo escuro e claro*/
+
+.side-nav-dark{
+    background-color: #262626;
+    color: white;
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    transition: .5s all ease;
+}
+
+.side-menu-dark li{
+    border-bottom: 2px solid #545454;
+}
+
+.side-menu-dark li:hover{
+    background-color: #333333;
+    color: white;
+    transition: .5s all ease;
+    cursor: pointer;
+}
+
+.nav-dark{
+    background-color: #181818;
+    color: white;
+    transition: .5s all ease;
+}
 

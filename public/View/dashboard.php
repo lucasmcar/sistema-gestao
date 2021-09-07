@@ -62,6 +62,11 @@
                         </li>
                     </ul>
                 </li>
+                <li id="dark-mode" onclick="lightDark()">
+                    <span class="material-icons">dark_mode</span>
+                    <p id="mode">Modo Escuro</p>
+
+                </li>
             </ul>
             </div>
 
@@ -70,5 +75,6 @@
         </div>
         <script src="../assets/js/load_pages.js"></script>
         <script src="../assets/js/upper.js"></script>
+        <script src="../assets/js/dark-light-mode.js"></script>
 </body>
 </html>
